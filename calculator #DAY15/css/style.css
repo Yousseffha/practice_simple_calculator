@@ -1,0 +1,135 @@
+/* start variables*/
+:root {
+    --MainColor: #f69906;
+    --SecondColor: #313131;
+}
+/* end variables*/
+/* start global rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    background-color: #000;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 11px;
+}
+/* small */
+@media (max-width:768px) {
+    .container {
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        width: 30%;
+    }
+}
+
+/* medium */
+@media (min-width:992px) {
+    .container {
+        width: 25%;
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+    .container {
+        width: 28vw;
+    }
+}
+/* end global rules */
+/* start result */
+.result {
+    height: 35%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    position: relative;
+}
+.result #reset {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: 0.3s;
+}
+.result div {
+    margin-right: 1px;
+}
+/* end result */
+/* start box */
+.box {
+    display: flex;
+}
+/* start numbers */
+.numbers {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.numbers span {
+    background-color: var(--SecondColor);
+    width: 4vw;
+    height: 4vw;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 19px;
+}
+/* end numbers */
+/* start Signs */
+.Signs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Signs span {
+    height: 4vw;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MainColor);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media (max-width:768px) {
+    .box span {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* end Signs */
+/* end box */
+
